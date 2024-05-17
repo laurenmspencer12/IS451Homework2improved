@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren's Skiing Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header nav ul li {
+            margin-left: 20px;
+        }
+
+        .header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .video-overlay h2 {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .video-overlay p {
+            font-size: 1.5em;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .video-overlay .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: left;
+        }
+
+        .about .text {
+            max-width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .about .cover-image {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .social a {
+            margin: 0 10px;
+        }
+
+        .footer .social img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about .text,
+            .about .cover-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Lauren's Skiing Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="content.html">AI Content</a></li>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h2>Welcome to the Ultimate Skiing Experience</h2>
+            <p>Join Lauren on her adventures across the world's best ski slopes.</p>
+            <a href="content.html" class="btn">See Image</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="text">
+            <h2>About Lauren</h2>
+            <p>Lauren is from Seattle and is graduating from UW this year. She has grown up skiing with her whole family and has a deep passion for the sport. Her blog offers insights, tips, and stories from her adventures.</p>
+        </div>
+        <img src="coverimage.jpg" alt="Lauren skiing" class="cover-image">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Lauren's Skiing Blog. All rights reserved.</p>
+            <div class="social">
+           
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
